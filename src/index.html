@@ -10,11 +10,67 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>
-        Hello World
-    </h1>
-    <img src="/assets/images/cat.jpeg" alt="" width="300">
+    
+    <header class="header">
+        <div class="header__container">
+            <button type="button" class="button btn--teal">
+                <a href="#" class="btn--text">Button 1</a>
+            </button>
+            <button class="button btn--purple">
+                <a href="#" class="btn--text">Button 2</a>
+            </button>
+            <button class="button btn--pink">
+                <a href="#" class="btn--text">Button 3</a>
+            </button>
+            <button class="button btn--green">
+                <a href="#" class="btn--text">Button 4</a>
+            </button>
+            <button class="button btn--yellow">
+                <a href="#" class="btn--text">Button 5</a>
+            </button>
+            <button class="button btn--blue">
+                <a href="#" class="btn--text">Button 6</a>
+            </button>
+        </div>
+    </header>
 
+    <section class="boxes">
+        <div class="boxes__container">
+            <div class="boxes__box box1" ></div>
+            <div class="boxes__box box2">FAIL</div>
+            <div class="boxes__box box3"></div>
+            <div class="boxes__box box4"></div>
+            <div class="boxes__box box5">0</div>
+            <div class="boxes__box box6">0</div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="footer__container">
+            <button class="button btn--sea">
+                <a href="#" class="btn--text seven">Button 7</a>
+            </button>
+            <form class="footer__form">
+                <input 
+                    class="footer__input" 
+                    placeholder="Input placeholder"
+                    type="text"
+                    name="footer"
+                    value
+                    id="myText"
+                >
+                <button onclick="myFunction()" type="button" class="footer__btn">output text</button>
+                <p class="areaForText" id="demo"></p>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        function myFunction() {
+            let value = document.getElementById("myText").value;
+            document.getElementById("demo").innerHTML = value;
+        }
+    </script>
 
     <script src="/scripts.js"></script>
 </body>
